@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+</head>
+<body>
+    <p>br or br/ both will work</p>
+    <h1>Form tag</h1>
+    
+    
+    <ol>
+        <li>
+            <h4>Input element/ field</h4>
+            <p>Used to collect data.</p>
+            <p>User can enter the data here.</p>
+            <form action="">
+                <input type="text">
+                <input type="text">
+            </form>
+        </li>
+        <li>
+            <h4>Label element</h4>
+            <form action="">
+                <label for="">UserName :</label>
+                <input type="text" name="" id="">
+                <label for="">UserEmail :</label>
+                <input type="text" name="" id="">
+            </form>
+        </li>
+        <li>
+            <h4>Button tag</h4>
+            <form action="">
+                <label for="">UserName</label>
+                <input type="text" name="" id="">
+                <label for="">UserEmail</label>
+                <input type="text" name="" id="">
+                <button>Login</button>
+            </form>
+        </li>
+        <li>
+            <h4>Break tag</h4>
+                        <form action="">
+                <label for="">UserName</label>
+                <input type="text" name="" id="">
+                <br>
+                <label for="">UserEmail</label>
+                <input type="text" name="" id="">
+                <br>
+                <br>
+                <label for="">Password</label>
+                <input type="text">
+
+            </form>
+        </li>
+        <li>
+            <h4>Center tag</h4>
+            <center>
+                <form action="">
+                <label for="">UserName</label>
+                <input type="text" name="" id="">
+                <br><br>
+                <label for="">UserEmail</label>
+                <input type="text" name="" id="">
+            </form>
+            </center>
+        </li>
+    </ol>
+    <ol>
+        <center><h3>Input tag</h3></center>
+        <h3>Attributes</h3>
+        <li>
+            
+            <h4>Place Holder attribue</h4>
+                <form action="">
+                <label for="">UserName</label>
+                <input type="text" name="" id="" placeholder="User name">
+                <label for="">UserEmail</label>
+                <input type="text" name="" id="" placeholder="User Email">
+            </form>
+        </li>
+        <li>
+            <h4>textarea element</h4>
+            <form action="">
+                <textarea name="" id="">enter</textarea>
+                <button>submit</button>
+            </form>
+        </li>
+        <li>
+            <h3>Type </h3>
+            <p>it accepts 22 values</p>
+            <p>default type is 'text'</p>
+                <form action="">
+                    <h4>text</h4>
+
+                <label for="">UserName</label>
+                <input type="text" name="" id="" size="78">
+                <h4>email</h4>
+                <label for="">UserEmail</label>
+                <input type="email" name="" id="">
+                <h4>password</h4>
+                <label for="">Passowrd</label>
+                <input type="password">
+                <h4>date</h4>
+                <label for="">date</label>
+                <input type="date" name="" id="">
+                <h4>number</h4>
+                <label for="">age</label>
+                <input type="number" name="" id="">
+                <h4>month</h4>
+                <label for="">month</label>
+                <input type="month">
+                <h4>date time local</h4>
+                <label for="">date time local</label>
+                <input type="datetime-local">
+                <h4>date time</h4>
+                <label for="">datetime</label>
+                <input type="datetime" name="" id="">
+                <h4>time</h4>
+                <label for="23">time</label>
+                <input type="time" name="" id="">
+                <h4>Button</h4>
+                <label for="23">button</label>
+                <input type="button" name="" id="23">
+                <h4>checkbox</h4>
+                <input type="checkbox" name="" id="23">
+                <h4>Phone (tel)</h4>
+                <input type="tel" name="" id="1233">
+                <h4>Radio</h4>
+                <label for="male">male</label>
+                <input type="radio" name="" id="male">
+                <label for="female">female</label>
+                <input type="radio" name="" id="female">
+                <p>problem with above multiple options can be selected.</p>
+                <p>soln:- using name attribute in input tag</p>
+                <h4>File</h4>
+                <input type="file" name="file" id="">
+                <h4>color</h4>
+                <input type="color" name="color" id="">
+                <h4>hidden</h4>
+                <p>why hidden is used: it does't display in user interface.</p>
+                <label for="hidden">hidden</label>
+                <input type="hidden" name="role" id="hidden" value="user">
+                <h4>img</h4>
+                if clicked on the image the form will be submitted.
+                <input type="image" name="img" id="" src="./multi_media/cnn_number.png">
+                <h4>range</h4>
+                <input type="range" name="" id="">
+                <br><br>
+                <button>Login</button>
+                
+            </form>
+
+        </li>
+        <li>
+                <h4>using for and id </h4>
+    <p>to build a relation between label tag with respected input field</p>
+    <p>for and id value should be given same</p>
+    <p>if we have given for value for multiple id's then, it will go to first id in the page</p>
+    <p>if we have given multiple value for for and one  same value for id then when clicked on any label it goes to that input</p>
+    <p>if we give multiple same value for for and multiple same value for id then when clicked on any label it will go to first id</p>
+    <form action="">
+        <label for="123">haaaaa😀</label>
+        <input type="text" name="" id="123">
+    </form>
+        </li>
+        <li>
+            <h4>required</h4>
+            <form action="">
+                <label for="">name</label>
+                <input type="text" required>
+                <button>submit</button>
+            </form>
+        </li>
+        <li>
+          <h4>name attribute</h4>
+          <p>for sending data of user to backend in form of key value pair. can see it in the url(query string)</p>
+            <form action="">
+                <label >name</label>
+                <input type="text" name="uname">
+                <button>submit</button>
+            </form> 
+            <p>name can be used to solve the problem of radio type in input.</p>
+            <p>give same name for all radio input by which if we select one input of radio other is disselected</p>
+            <form action="">
+                <label for="male">male</label>
+                <input type="radio" name="gender" id="male">
+                <label for="female">female</label>
+                <input type="radio" name="gender" id="female">
+                <label for="other">other</label>
+                <input type="radio" name="gender" id="other">
+                <button>submit</button>
+            </form>
+            <p>why after submiting the radio input in the url it is showing gender=on. to solve this we use value attribute in input</p>
+
+        </li>
+        <li>
+            <h4>value attribute</h4>
+            <p>sending value to backend</p>
+            <form action="">
+                <label for="male">male</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">female</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="other">other</label>
+                <input type="radio" name="gender" id="other" value="others">
+                <button>submit</button>
+            </form>
+            <p>setting initial value </p>
+            <form action="">
+                <label for="name">name</label>
+                <input type="text" name="name" id="name" value="guest">
+            </form>
+            <form action="">
+                <label for="">1</label>
+                <input type="checkbox" name="1" id="" value="1">
+                <label for="">2</label>
+                <input type="checkbox" name="2" id="" value="2">
+                <label for="" >3</label>
+                <input type="checkbox" name="3" id="" value="3">
+                <button>haaa</button>
+            </form>
+        </li>
+        <li>
+            <h4>size</h4>
+            <p>it defines the visibility of the input box in the ui but it does not mean that it doesn't accept more than that</p>
+            <form action="">
+                <input type="text" name="" id="" size="3">
+            </form>
+        </li>
+        <li>
+            <h4>minlength and maxlength</h4>
+            <p>minimum disides minimum characters user should enter</p>
+            <form action="">
+                <input type="text" name="" id="" minlength="3">
+                <input type="text" name="" id="" maxlength="8">
+                <button>submit</button>
+            </form>
+            
+        </li>
+    </ol>
+
+    
+</body>
+</html>
