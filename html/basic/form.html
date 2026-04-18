@@ -124,6 +124,7 @@
                 <h4>number</h4>
                 <label for="">age</label>
                 <input type="number" name="" id="">
+                <input type="number" name="" id="" min="3" max="101">
                 <h4>month</h4>
                 <label for="">month</label>
                 <input type="month">
@@ -163,6 +164,18 @@
                 <input type="image" name="img" id="" src="./multi_media/cnn_number.png">
                 <h4>range</h4>
                 <input type="range" name="" id="">
+                <input type="range" name="range" id="" min="2" max="101">
+                <input type="range" name="" id="" step="50">
+                <input type="range" name="" id="" step="20">
+                <h4>search</h4>
+                <input type="search" name="" id="">
+                <h4>submit</h4>
+                <p>can't use this submit outside the form</p>
+                <input type="submit" name="" id="">
+                <h4>url</h4>
+                <p>it only cares about : and \\</p>
+                <input type="url" name="" id="">
+                
                 <br><br>
                 <button>Login</button>
                 
@@ -255,8 +268,25 @@
             </form>
             
         </li>
-    </ol>
+        <li>
+            <h4>readonly</h4>
+            <p>it makes the input box read only</p>
+            <form action="">
+                <input type="text" name="uname" value="gagan"id="" readonly>
+            </form>
 
+        </li>
+        <li>
+            <h4>autofocus</h4>
+            <p>it makes the input box focused when the page loads</p>
+            <form action="">
+                <input type="text" name="uname" value="gagan"id="" autofocus>
+            </form>
+        </li>
+    </ol>
+    <ol>
+        
+    </ol>
     
 </body>
 </html>
